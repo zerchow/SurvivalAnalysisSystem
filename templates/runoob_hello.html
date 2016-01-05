@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{#test string#}
+<h1>{{ runoob_hello }}</h1>
+
+{#test if#}
+{% if 1 == 1 %}
+    <h2>1 == 1</h2>
+{% else %}
+    <h2>1 != 1</h2>
+{% endif %}
+
+{#test logic#}
+{% if var1 and var2 %}
+    <h2>var 1 and var 2 are ready</h2>
+{% endif %}
+
+{#test for#}
+{% for foo in runoob_list %}
+    <h5>{{ foo }}</h5>
+{% endfor %}
+
+{#test for reversed#}
+{% for foo in runoob_list reversed %}
+    <h5>{{ foo }}</h5>
+{% endfor %}
+
+{#test for iterator#}
+{% for runoob1 in runoob_list %}
+    {% for runoob2 in runoob_list %}
+        <span>Hi </span>
+    {% endfor %}
+    <br>
+{% endfor %}
+<br>
+
+{#test ifequal#}
+{% ifequal 1 1 %}
+    <p>1 equals 1</p>
+{% else %}
+    <p>1 not equals 1</p>
+{% endifequal %}
+
+{#test ifnotequal#}
+{% ifnotequal 1 2 %}
+    <p>1 not equals 2</p>
+{% else %}
+    <p>1 equals 2</p>
+{% endifnotequal %}
+
+<img src="/images/lena.jpg">
+<img src="/lena">
+
+</body>
+</html>
